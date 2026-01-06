@@ -1,0 +1,54 @@
+#commentBox {
+    width: 100%;
+    max-width: 600px;
+    height: 20px;
+    resize: none;
+    padding: 8px;
+    border: 1px solid #7A7A7A;
+    border-radius: 25px;
+    margin-right: 1rem;
+    color: black;
+}
+#commentSection {
+    width: 100%;
+    max-width: 900px;
+    height: 400px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 10px;
+    overflow-y: auto;
+    margin-top: 10px;
+    background-image: url(services/embleme.jpg);
+    background-position: center;
+
+}
+.comment {
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid #7A7A7A;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    font-weight: 500;
+    text-align: left;
+}
+
+main{
+    text-align: center;
+    margin-left: 27%;
+    margin-top: 5%;
+}
+
+button{
+    border-radius: 25px;
+    padding: 7px;
+}
+
+
+
+#comment{
+    display: flex;
+    justify-content: left;
+    margin-top: -3rem;
+    align-items: center;
+    margin-left: 1rem;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Agence Belmont</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="contact_form.css">
+    <link rel="stylesheet" href="services.css">
+</head>
+
+<body>
+    <header>
+        <a href="accueil.html"><img src="logo/logo.png" alt=""></a>
+        <nav class="flex">
+            <a id="services_button" href="services.html">services</a>
+            <a href="produits.html">produits</a>
+            <a href="contact.html">contact</a>
+            <a href="rdv_page.html">Questionnaire</a>
+            <a href="forum.html">forum</a>
+        </nav>
+        <ul class="flex">
+            <li><a href="#">
+                    <img src="icone/X.png" alt=""></a>
+            </li>
+            <li><a href="#">
+                    <img src="icone/insta.png" alt=""></a>
+            </li>
+            <li><a href="#">
+                    <img src="icone/facebook.png" alt=""></a>
+            </li>
+        </ul>
+        <img id="profil" src="icone/profil.png" alt="">
+    </header>
+    <main>
+        <!-- Gestion du carrousel -->
+    <div id="carrousel_manager">
+        <button class="carousel-btn" onclick="prevCarousel()">❮</button>
+        <span id="carousel-title">Objet Sacré</span>
+        <button class="carousel-btn" onclick="nextCarousel()">❯</button>
+    </div>
+
+    <!-- Conteneur du carrousel -->
+    <div class="carousel-container">
+        <div class="carousel-nav-container">
+            <button class="carousel-nav" onclick="prevSlide()">❮</button>
+            <button class="carousel-nav" onclick="nextSlide()">❯</button>
+        </div>
+
+        <div class="carousel-wrapper">
+            <div class="carousel" id="carousel"></div>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <section id="foot">
+            <button id="black_theme">
+                <input type="checkbox">
+            </button>
+            <section>
+                <h3>Mention Légale</h3>
+            </section>
+        </section>
+    </footer>
+
+    <script src="services.js"></script>
+</body>
+
+</html>

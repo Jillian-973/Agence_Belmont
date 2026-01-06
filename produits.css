@@ -1,0 +1,95 @@
+ /* Conteneur principal (doublé en taille) */
+ .carousel-container {
+    width: 1040px;
+    /* Anciennement 520px */
+    overflow: hidden;
+    margin: auto;
+    border-radius: 20px;
+    position: relative;
+}
+
+/* Wrapper */
+.carousel-wrapper {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    background-color: #D6C08E;
+}
+
+/* Liste des images */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Une image (doublée en taille) */
+.card {
+    padding: 10px;
+}
+
+.card img {
+    width: 240px;
+    /* Anciennement 120px */
+    height: 300px;
+    /* Anciennement 150px */
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Conteneur des boutons */
+.carousel-nav-container {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+/* Boutons */
+.carousel-nav {
+    background: rgba(0, 123, 255, 0);
+    color: #D4AF37;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    /* Taille augmentée */
+    border-radius: 5px;
+}
+
+.carousel-nav:hover {
+    background-color: #5E006E;
+}
+
+.carousel-btn {
+    margin: 10px;
+    background: rgba(0, 123, 255, 0);
+    color: #D4AF37;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    font-size: 20px;
+}
+
+.carousel-btn:hover {
+    background: #7D1128;
+}
+
+/* Titre dynamique */
+#carousel-title {
+    font-size: 28px;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #D4AF37;
+}
+
+#carrousel_manager {
+    text-align: center;
+    background-color: #5E006E;
+    margin: 0rem 40%;
+    margin-bottom: 1rem;
+    border-radius: 25px;
+    margin-top: 7rem;
+}

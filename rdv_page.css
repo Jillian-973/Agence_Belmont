@@ -1,0 +1,175 @@
+body {
+    text-align: center;
+    color: black;
+}
+
+#card {
+    background-image: url(asset/formu.jpg);
+    padding: 9rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#card a {
+    text-decoration: none;
+    color: black;
+}
+
+#q0 {
+    display: flex;
+    align-items: center;
+    margin: 9% 20rem;
+}
+
+#text {
+    text-align: center;
+    padding-right: 6rem;
+}
+
+#text h1 {
+    color: #D4AF37;
+    padding-bottom: 1rem;
+}
+
+#text p {
+    color: white;
+    padding-bottom: 2rem;
+}
+
+#text ul {
+    color: white;
+    margin: 0rem 4rem;
+    text-decoration: #D4AF37;
+}
+
+#text ul li {
+    padding-bottom: 2rem;
+    text-decoration: #D4AF37;
+}
+
+
+
+h1 {
+    color: #FFD700;
+}
+
+.question-container {
+    display: none;
+    background-image: url(asset/formu.jpg);
+    padding: 5rem 0rem;
+    margin: 0rem 35rem;
+    border-radius: 20px;
+    margin-top: 7%;
+
+}
+
+.question-container p {
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.question-container.active {
+    display: block;
+}
+
+.form {
+    display: none;
+}
+
+.form.active {
+    display: block;
+}
+
+
+.footer {
+    bottom: 38px;
+    position: fixed;
+}
+
+.options {
+    list-style: none;
+    padding: 0;
+
+}
+
+
+.options li {
+    background: #888;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: inline-block;
+    min-width: 200px;
+    color: black;
+    font-weight: bold;
+}
+
+.options li.selected {
+    background: #8b0000;
+    color: #FFD700;
+}
+
+.options li:hover {
+    background: #FFD700;
+    color: black;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #8b0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+.btn:hover:not(:disabled) {
+    background: #FFD700;
+    color: #0c1022;
+}
+
+.confirmation {
+    display: none;
+    background-image: url(asset/formu.jpg);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 215, 0, 0.2);
+    margin: 0rem 25rem;
+    margin-top: 4%;
+
+    p {
+        padding: 1rem;
+        font-weight: 500;
+        font-style: bold;
+    }
+
+    ul {
+        padding: 1rem;
+        font-weight: 700;
+    }
+
+    li {
+        padding: 1rem;
+        background-color: #8b0000;
+        color: #D4AF37;
+        margin: 0rem 10rem;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    h2 {
+        padding: 1rem;
+    }
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire rapide Agence Belmont</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="contact_form.css">
+    <link rel="stylesheet" href="rdv_page.css">
+</head>
+
+<body>
+    <header>
+        <a href="accueil.html"><img src="logo/logo.png" alt=""></a>
+        <nav class="flex">
+            <a href="services.html">services</a>
+            <a href="produits.html">produits</a>
+            <a href="contact.html">contact</a>
+            <a id="request_button" href="rdv_page.html">Questionnaire</a>
+            <a href="forum.html">forum</a>
+        </nav>
+        <ul class="flex">
+            <li><a href="#">
+                    <img src="icone/X.png" alt=""></a>
+            </li>
+            <li><a href="#">
+                    <img src="icone/insta.png" alt=""></a>
+            </li>
+            <li><a href="#">
+                    <img src="icone/facebook.png" alt=""></a>
+            </li>
+        </ul>
+        <img id="profil" src="icone/profil.png" alt="">
+    </header>
+    <main>
+
+        <div class="container">
+            <div class="form active" id="q0">
+                <div id="text">
+                    <h1>Questionnaire d'évaluation Surnaturelle</h1>
+                    <p>Bienvenue sur notre plateforme. Ce questionnaire rapide a pour but de mieux comprendre la
+                        nature du phénomène surnaturel auquel vous êtes confronté.</p>
+                    <ul>
+                        <li>Identifier rapidement le type de menace (créature, malédiction, activité paranormale, etc.)
+                        </li>
+                        <li>Évaluer le niveau de danger pour vous et votre entourage</li>
+                        <li>Proposer des solutions adaptées à votre situation</li>
+                    </ul>
+                </div>
+                <button id="card" onclick="nextQuestion(0)">
+                    <h2>Identification </h2>
+                    <h2>Rapide</h2>
+                    <h2>du problème</h2>
+                </button>
+            </div>
+
+            <div id="questionnaire">
+
+                <div class="question-container" id="q1">
+                    <p>1. Pouvez-vous décrire brièvement le phénomène auquel vous faites face ?</p>
+                    <ul class="options">
+                        <li>Bruits inexpliqués</li>
+                        <li>Apparitions visuelles</li>
+                        <li>Activité physique (objets déplacés, touchés, etc.)</li>
+                        <li>Attaques physiques (griffures, morsures)</li>
+                        <li class="precise">Autre (précisez)</li>
+                    </ul>
+                    <button class="btn" disabled onclick="nextQuestion(1)">Répondre</button>
+                    <p>1/11</p>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question-container" id="q2">
+                    <p>2. Quel type de phénomène avez-vous observé ?</p>
+                    <ul class="options">
+                        <li>Bruits inexpliqués</li>
+                        <li>Apparitions visuelles</li>
+                        <li>Activité physique (objets déplacés, touchés, etc.)</li>
+                        <li>Attaques physiques (griffures, morsures)</li>
+                        <li>Autre (précisez)</li>
+                    </ul>
+                    <button class="btn" disabled onclick="nextQuestion(2)">Répondre</button>
+                    <p>2/11</p>
+
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question-container" id="q3">
+                    <p>3. À quelle fréquence ce phénomène se produit-il ?</p>
+                    <ul class="options">
+                        <li>Une seule fois</li>
+                        <li>Occasionnellement</li>
+                        <li>Régulièrement</li>
+                        <li>En permanence</li>
+                    </ul>
+                    <button class="btn" disabled onclick="nextQuestion(3)">Répondre</button>
+                    <p>3/11</p>
+
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question-container" id="q4">
+                    <p>4. À quel moment de la journée les phénomènes sont-ils les plus fréquents ?</p>
+                    <ul class="options">
+                        <li>Jour</li>
+                        <li>Nuit</li>
+                        <li>Indifférent</li>
+                    </ul>
+                    <button class="btn" disabled onclick="nextQuestion(4)">Répondre</button>
+                    <p>4/11</p>
+
+                </div>
+
+                <!-- Question 5 -->
+                <div class="question-container" id="q5">
+                    <p>5. Le phénomène est-il associé à un lieu particulier ?</p>
+                    <ul class="options">
+                        <li>Maison ou bâtiment</li>
+                        <li>Forêt ou extérieur</li>
+                        <li>Objet spécifique</li>
+                        <li>Autre (précisez)</li>
+                    </ul>
+                    <button class="btn" disabled onclick="nextQuestion(5)">Répondre</button>
+                    <p>5/11</p>
+
+                </div>
+
+                <!-- Question 6 -->
+                <div class="question-container" id="q6">
+                    <p>6. Avez-vous remarqué des changements récents dans cet environnement ?</p>
+                    <ul class="options">
+                        <li>Oui (par exemple : rénovation, nouvel objet, décès, événement étrange)</li>
+                        <li>Non</li>
+                    </ul>
+                    <button class="btn" disabled onclick="nextQuestion(6)">Répondre</button>
+                    <p>6/11</p>
+
+                </div>
+
+                <!-- Question 7 -->
+                <div class="question-container" id="q7">
+                    <p>7. Le phénomène semble-t-il réagir à votre présence ou à vos actions ?</p>
+                    <ul class="options">
+                        <li>Oui</li>
+                        <li>Non</li>
+                        <li>Pas sûr</li>
+                    </ul>
+                    <button class="btn" disabled onclick="nextQuestion(7)">Répondre</button>
+                    <p>7/11</p>
+
+                </div>
+
+                <!-- Question 8 -->
+                <div class="question-container" id="q8">
+                    <p>8. Avez-vous déjà essayé une méthode pour résoudre le problème ?</p>
+                    <ul class="options">
+                        <li>Prières ou bénédictions</li>
+                        <li>Consultation d’un médium ou d’un prêtre</li>
+                        <li>Utilisation de talismans ou objets spirituels</li>
+                        <li>Rien tenté pour le moment</li>
+                    </ul>
+                    <button class="btn" disabled onclick="nextQuestion(8)">Répondre</button>
+                    <p>8/11</p>
+
+                </div>
+
+                <!-- Question 9 -->
+                <div class="question-container" id="q9">
+                    <p>9. Y a-t-il des témoins ?</p>
+                    <ul class="options">
+                        <li>Oui, d’autres personnes ont vu/vécu le phénomène</li>
+                        <li>Non, je suis le seul témoin</li>
+                    </ul>
+                    <button class="btn" disabled onclick="nextQuestion(9)">Répondre</button>
+                    <p>9/11</p>
+
+                </div>
+
+                <!-- Question 10 -->
+                <div class="question-container" id="q10">
+                    <p>10. Quel serait votre priorité pour résoudre ce problème ?</p>
+                    <ul class="options">
+                        <li>Comprendre l’origine du phénomène</li>
+                        <li>Éliminer la menace</li>
+                        <li>Protéger ma maison/famille</li>
+                        <li>Autre (précisez)</li>
+                    </ul>
+                    <button class="btn" disabled onclick="nextQuestion(10)">Répondre</button>
+                    <p>10/11</p>
+
+                </div>
+
+                <!-- Question 11 -->
+                <div class="question-container" id="q11">
+                    <p>11. Souhaitez-vous inclure des photos ou fichiers ?</p>
+                    <ul class="options">
+                        <li>Oui</li>
+                        <li>Non</li>
+                    </ul>
+                    <button class="btn" disabled onclick="showConfirmation()">Répondre</button>
+                    <p>11/11</p>
+
+                </div>
+
+
+
+            </div>
+            <!-- Confirmation Message -->
+            <div id="confirmation" class="confirmation">
+                <h2>Merci d'avoir complété le questionnaire !</h2>
+                <p>Nous avons bien reçu vos réponses et notre équipe d’experts analyse actuellement votre situation.
+                    Vous recevrez une réponse personnalisée avec des recommandations adaptées dans les plus brefs
+                    délais.</p>
+                    <ul>En attendant, voici quelques conseils utiles :
+                        <li>Restez calme et ne provoquez pas le phénomène.</li>
+                        <li>Si nécessaire, créez une zone de sécurité en évitant les lieux ou objets liés au phénomène.</li>
+                        <li>Gardez vos proches informés et à l’écart du danger.</li>
+                    </ul>
+                    <p>
+                        Nous sommes là pour vous aider. Si votre situation s’aggrave ou nécessite une intervention immédiate, n’hésitez pas à nous contacter directement par téléphone ou via notre service d'urgence.
+                        Votre sécurité est notre priorité.</p>
+                        <p>– L’Agence Belmont</p>
+                <button class="btn" onclick="window.location.href='rdv_page.html'">Accéder au formulaire</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <section id="foot">
+            <button id="black_theme">
+                <input type="checkbox">
+            </button>
+            <section>
+                <h3>Mention Légale</h3>
+            </section>
+        </section>
+    </footer>
+
+    <script src="rdv_page.js">
+
+    </script>
+</body>
+
+</html>

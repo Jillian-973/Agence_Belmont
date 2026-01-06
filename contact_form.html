@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Contact Agence Belmont</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="contact_form.css">
+</head>
+
+<body>
+    <header>
+        <a href="accueil.html"><img src="logo/logo.png" alt=""></a>
+        <nav class="flex">
+            <a href="services.html">services</a>
+            <a href="produits.html">produits</a>
+            <a id="contact_button" href="#contact.html">contact</a>
+            <a href="rdv_page.html">Questionnaire</a>
+            <a href="forum.html">forum</a>
+        </nav>
+        <ul class="flex">
+            <li><a href="#">
+                    <img src="icone/X.png" alt=""></a>
+            </li>
+            <li><a href="#">
+                    <img src="icone/insta.png" alt=""></a>
+            </li>
+            <li><a href="#">
+                    <img src="icone/facebook.png" alt=""></a>
+            </li>
+        </ul>
+        <img id="profil" src="icone/profil.png" alt="">
+    </header>
+    <main>
+        <section id="contact">
+            <h2>Contactez-nous</h2>
+            <p>
+                N'hésitez pas à nous contacter, nous vous répondrai dans les plus brefs
+                délais.
+            </p>
+            <form method="post">
+                <div class="form-group">
+                    <div>
+                        <label for="nom">Nom <span class="required">*</span></label>
+                        <input type="text" id="nom" name="nom" required />
+                    </div>
+                    <div>
+                        <label for="prenom">Prénom</label>
+                        <input type="text" id="prenom" name="prenom" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div>
+                        <label for="email">E-Mail <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div>
+                        <label for="telephone">Téléphone</label>
+                        <input type="tel" id="telephone" name="telephone" />
+                    </div>
+                </div>
+
+                <div>
+                    <label for="objet">Objet <span class="required">*</span></label>
+                    <input type="text" id="objet" name="objet" required />
+                </div>
+
+                <div>
+                    <label for="message">Message <span class="required">*</span></label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+            </form>
+
+        </section>
+        <button id="submit" type="submit">ENVOYER</button>
+
+    </main>
+    <footer>
+        <section id="foot">
+            <button id="black_theme">
+                <input type="checkbox">
+            </button>
+            <section>
+                <h3>Mention Légale</h3>
+            </section>
+        </section>
+    </footer>
+</body>
+
+</html>
